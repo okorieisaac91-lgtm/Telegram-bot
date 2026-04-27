@@ -4,10 +4,10 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 TOKEN = 8772796307:AAHmHcLxjI0HrglJmGHl-KrGuyODUTYsIWU
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Bot is live and working.")
+    await update.message.reply_text("Bot is working.")
 
 async def handle(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("I received your message.")
+    await update.message.reply_text("Message received.")
 
 app = ApplicationBuilder().token(TOKEN).build()
 
